@@ -1,3 +1,5 @@
 // Be sure to define custom variable values before including bootstrap.scss & boostrap-vue.scss
+@import '@/assets/scss/components/components';
+
 @import 'node_modules/bootstrap/scss/bootstrap';
 @import 'node_modules/bootstrap-vue/src/index.scss';
