@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <b-navbar toggleable="lg" type="dark" variant="dark" sticky="true">
+    <b-navbar toggleable="lg" type="dark" variant="dark" fixed="top">
       <b-container>
         <b-navbar-brand href="/" rel="Boba Tap Go - Online Ordering System">
           <img class="brand-logo" src="@/assets/imgs/logo.png" />

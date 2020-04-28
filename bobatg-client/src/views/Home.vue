@@ -1,20 +1,21 @@
 <template>
-  <div class="home m-5">
+  <div class="home">
+    <b-card
+      overlay
+      img-src="https://picsum.photos/900/250/?image=3"
+      img-alt="Card Image"
+      text-variant="white"
+      align="center"
+      title="Cupidatat adipisicing commodo tempor et duis ex in"
+    >
+      <b-card-text>
+        Ea fugiat eiusmod sunt tempor fugiat aliquip velit aliqua qui velit anim
+      </b-card-text>
+      <b-card-text>
+        <CTAForm />
+      </b-card-text>
+    </b-card>
     <b-container>
-      <b-row class="my-5 text-center">
-        <b-col class="mt-5">
-          <h1>Cupidatat adipisicing commodo tempor et duis ex in</h1>
-          <h2>
-            Ea fugiat eiusmod sunt tempor fugiat aliquip velit aliqua qui velit
-            anim
-          </h2>
-        </b-col>
-      </b-row>
-      <b-row align-h="center">
-        <b-col>
-          <CTAForm />
-        </b-col>
-      </b-row>
       <b-row class="my-5">
         <b-col class="my-5">
           <p>
