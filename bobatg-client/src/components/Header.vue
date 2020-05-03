@@ -45,4 +45,23 @@ export default {
       width: 50%;
     }
   }
+  .navbar-dark .navbar-toggler {
+    border-color: #343A40;
+  }
+  .navbar-toggler-icon {
+    background-color: #FFF;
+  }
+  li {
+    text-transform: uppercase;
+  }
+  a {
+    &:link {
+      text-decoration: none;
+    }
+      color: rgba(255, 255, 255, 0.7);
+    &:hover {
+      color: #FFF;
+      text-decoration: none;
+    }
+  }
 </style>
