@@ -1,6 +1,6 @@
 <template>
   <div class="review">
-    <b-row class="mt-5 mb-3">
+    <b-row class="mt-5 mb-lg-3">
       <b-col cols="12" class="mt-5 mb-5">
         <h2 class="text-center">Commodo cillum mollit anim officia sunt dolor exercitation nostrud.</h2>
         <p class="text-center mt-5">
@@ -8,10 +8,10 @@
         </p>
       </b-col>
     </b-row>
-    <b-row align-h="around" class="mt-5 mb-5">
-      <b-col cols="5" class="d-flex p-4">
-        <img src="https://source.unsplash.com/random/100x100"  class="align-self-start" />
-        <div class="review-info mx-4">
+    <b-row align-h="around" class="mb-5">
+      <b-col sm="12" md="12" lg="5" class="d-flex flex-column flex-lg-row align-items-center p-4">
+        <img src="https://source.unsplash.com/random/100x100"  class="align-self-lg-start mb-4 mb-lg-0" />
+        <div class="review-info mx-4 text-center text-lg-left">
           <p class="name">Commodo culpa elit irure excepteur.</p>
           <p class="location">
             Laboris aute aliqua aliquip ut quis sit non excepteur.
@@ -22,9 +22,9 @@
           </p>
         </div>
       </b-col>
-      <b-col cols="5" class="d-flex p-4">
-        <img src="https://source.unsplash.com/random/100x100" class="align-self-start" />
-        <div class="review-info mx-4">
+      <b-col sm="12" md="12" lg="5" class="d-flex flex-column flex-lg-row align-items-center p-4">
+        <img src="https://source.unsplash.com/random/100x100" class="align-self-lg-start mb-4 mb-lg-0" />
+        <div class="review-info mx-4 text-center text-lg-left">
           <p class="name">Commodo culpa elit irure excepteur.</p>
           <p class="location">
             Laboris aute aliqua aliquip ut quis sit non excepteur.
@@ -36,10 +36,10 @@
         </div>
       </b-col>
     </b-row>
-    <b-row align-h="around" class="mt-5 mb-5">
-      <b-col cols="5" class="d-flex p-4" >
-        <img src="https://source.unsplash.com/random/100x100" class="align-self-start" />
-        <div class="review-info mx-4">
+    <b-row align-h="around" class="mb-5">
+      <b-col sm="12" md="12" lg="5" class="d-flex flex-column flex-lg-row align-items-center p-4" >
+        <img src="https://source.unsplash.com/random/100x100" class="align-self-lg-start mb-4 mb-lg-0" />
+        <div class="review-info mx-4 text-center text-lg-left">
           <p class="name">Commodo culpa elit irure excepteur.</p>
           <p class="location">
             Laboris aute aliqua aliquip ut quis sit non excepteur.
@@ -50,9 +50,9 @@
           </p>
         </div>
       </b-col>
-      <b-col cols="5" class="d-flex p-4">
-        <img src="https://source.unsplash.com/random/100x100" class="align-self-start" />
-        <div class="review-info mx-4">
+      <b-col sm="12" md="12" lg="5" class="d-flex flex-column flex-lg-row align-items-center p-4">
+        <img src="https://source.unsplash.com/random/100x100" class="align-self-lg-start mb-4 mb-lg-0" />
+        <div class="review-info mx-4 text-center text-lg-left">
           <p class="name">Commodo culpa elit irure excepteur.</p>
           <p class="location">
             Laboris aute aliqua aliquip ut quis sit non excepteur.
@@ -68,7 +68,10 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "CustReview"
+};
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+</style>

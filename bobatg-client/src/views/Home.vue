@@ -2,8 +2,10 @@
   <div class="home">
     <b-card
       overlay
-      img-src="https://picsum.photos/900/250/?image=3"
+      img-src="https://source.unsplash.com/random/"
       img-alt="Card Image"
+      img-width="100%"
+      img-height="100%"
       text-variant="white"
       align="center"
       title="Cupidatat adipisicing commodo tempor et duis ex in"
@@ -17,7 +19,7 @@
     </b-card>
     <b-container>
       <b-row class="my-5">
-        <b-col class="my-5">
+        <b-col class="my-3 my-lg-5" sm="12" md="12" lg="6">
           <p>
             Sunt deserunt eiusmod nulla qui sint non laborum occaecat aliquip
             irure irure cupidatat nisi.
@@ -30,15 +32,15 @@
           </p>
           <p>Nulla enim ex laborum duis officia incididunt sint eu.</p>
         </b-col>
-        <b-col class="my-5">
-          <img src="https://source.unsplash.com/random/600x400" />
+        <b-col class="my-3 my-lg-5" sm="12" md="12" lg="6">
+          <img src="https://source.unsplash.com/random/600x400" class="image-placeholder" />
         </b-col>
       </b-row>
       <b-row class="my-5">
-        <b-col class="my-5">
-          <img src="https://source.unsplash.com/random/600x400" />
+        <b-col class="my-3 my-lg-5" sm="12" md="12" lg="6" order="2" order-sm="2" order-md="2" order-lg="1">
+          <img src="https://source.unsplash.com/random/600x400" class="image-placeholder" />
         </b-col>
-        <b-col class="my-5">
+        <b-col class="my-3 my-lg-5" sm="12" md="12" lg="6" order="1" order-sm="1" order-md="1" order-lg="2">
           <p>
             Sunt deserunt eiusmod nulla qui sint non laborum occaecat aliquip
             irure irure cupidatat nisi.
@@ -53,7 +55,7 @@
         </b-col>
       </b-row>
       <b-row class="my-5">
-        <b-col class="my-5">
+        <b-col class="my-3 my-lg-5" sm="12" md="12" lg="6">
           <p>
             Sunt deserunt eiusmod nulla qui sint non laborum occaecat aliquip
             irure irure cupidatat nisi.
@@ -66,15 +68,15 @@
           </p>
           <p>Nulla enim ex laborum duis officia incididunt sint eu.</p>
         </b-col>
-        <b-col class="my-5">
-          <img src="https://source.unsplash.com/random/600x400" />
+        <b-col class="my-3 my-lg-5" sm="12" md="12" lg="6">
+          <img src="https://source.unsplash.com/random/600x400" class="image-placeholder" />
         </b-col>
       </b-row>
       <b-row class="my-5">
-        <b-col class="my-5">
-          <img src="https://source.unsplash.com/random/600x400" />
+        <b-col class="my-3 my-lg-5" sm="12" md="12" lg="6" order="2" order-sm="2" order-md="2" order-lg="1">
+          <img src="https://source.unsplash.com/random/600x400" class="image-placeholder" />
         </b-col>
-        <b-col class="my-5">
+        <b-col class="my-3 my-lg-5" sm="12" md="12" lg="6" order="1" order-sm="1" order-md="1" order-lg="2">
           <p>
             Sunt deserunt eiusmod nulla qui sint non laborum occaecat aliquip
             irure irure cupidatat nisi.
@@ -103,8 +105,8 @@
 
 <script>
 // @ is an alias to /src
-import CTAForm from "@/components/CTAForm.vue";
-import CustReview from "@/components/CustReview.vue";
+import CTAForm from "@/components/CTAForm";
+import CustReview from "@/components/CustReview";
 
 export default {
   name: "Home",
@@ -114,3 +116,20 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+  .card-img {
+    max-height: 100vh;
+    height: 100vh;
+    object-fit: cover;
+  }
+  .card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 124px;
+  }
+  .image-placeholder {
+  width: 100%;
+}
+</style>

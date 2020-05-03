@@ -36,3 +36,13 @@ export default {
   name: "Header"
 };
 </script>
+
+<style lang="scss" scoped>
+  .brand-logo {
+    width: 34%;
+    height: auto;
+    @media only screen and (min-width: 992px) {
+      width: 50%;
+    }
+  }
+</style>
