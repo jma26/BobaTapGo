@@ -1,5 +1,5 @@
 ## General Info
-In the recent days after Bay Area, California was issued the 'shelter-in-place' order, a lot of independently owned tea shops are struggling to stay afloat. Further more, a good percentage of them do not have a reliable online ordering system. For the love of boba, I want this project to be free as much as possible to my clients affected by Covid-19. Take care everybody!
+In the recent days after Bay Area, California was issued the 'shelter-in-place' order, a lot of independently owned tea shops are struggling to stay afloat and do not have a reliable online ordering system. For the love of boba, I want this project to be free as much as possible to my clients affected by Covid-19. Take care everybody!
 
 ## Concept
 * Ability to create online store
@@ -11,6 +11,6 @@ In the recent days after Bay Area, California was issued the 'shelter-in-place' 
 * Display nearest available boba shops closest to user
 
 ## Technologyes (Pending)
-* Node.js | Flask/Django
-* MongoDB | MySQL
+* Node.js + Express.js
+* MongoDB
 * Vue.js
