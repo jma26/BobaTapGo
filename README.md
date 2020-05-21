@@ -1,5 +1,5 @@
 ## General Info
-In the recent days after Bay Area, California was issued the 'shelter-in-place' order, a lot of independently owned tea shops are struggling to stay afloat and do not have a reliable online ordering system. For the love of boba, I want this project to be free as much as possible to my clients affected by Covid-19. Take care everybody!
+Mock online ordering system for Boba tea shops. Inspired by news outlet report of restaurants not having a reliable online ordering system during the Covid-19 lockdown aka "shelter-in-place" order throughout California, I wanted to create this to learn and continue growing as a software developer. Modern day issues can be resolved by modern technology! #beatcovid
 
 ## Concept
 * Ability to create online store
