@@ -118,18 +118,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .card-img {
-    max-height: 100vh;
-    height: 100vh;
-    object-fit: cover;
-  }
-  .card-img-overlay {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 124px;
-  }
-  .image-placeholder {
-  width: 100%;
+.card-img {
+  max-height: 100vh;
+  height: 100vh;
+  object-fit: cover;
+}
+.card-img-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 124px;
+}
+.image-placeholder {
+width: 100%;
 }
 </style>

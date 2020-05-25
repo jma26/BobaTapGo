@@ -1,11 +1,27 @@
 <template>
   <div class="demo">
-    <h1>This is an about page</h1>
+    <Banner v-bind:text="text || 'Order Ahead'" />
   </div>
 </template>
 
 <script>
+import Banner from "@/components/Banner";
+
 export default {
-  name: "Demo"
+  name: "Demo",
+  components: {
+    Banner
+  },
+  props: {
+    text: {
+      type: String
+    }
+  }
 };
 </script>
+
+<style lang="scss" scoped>
+  .demo {
+    margin-top: 124px;
+  }
+</style>
