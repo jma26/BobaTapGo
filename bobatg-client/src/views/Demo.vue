@@ -7,7 +7,8 @@
           <RestaurantInfo 
             :name="name"
             :description="description"
-            class="py-5"
+            :categories="categories"
+            class="pt-5 py-3"
           />
         </b-col>
       </b-row>
@@ -37,6 +38,10 @@ export default {
     description: {
       type: String,
       default: 'Ea fugiat eiusmod sunt tempor fugiat aliquip velit aliqua qui velit anim'
+    },
+    categories: {
+      type: Array,
+      default: () => ['Milk Teas', 'Green Teas', 'Black Teas', 'Coffees', 'Smoothies']
     }
   }
 };
