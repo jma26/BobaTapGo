@@ -38,30 +38,30 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .brand-logo {
-    width: 34%;
-    height: auto;
-    @media only screen and (min-width: 992px) {
-      width: 50%;
-    }
+.brand-logo {
+  width: 34%;
+  height: auto;
+  @media only screen and (min-width: 992px) {
+    width: 50%;
   }
-  .navbar-dark .navbar-toggler {
-    border-color: #343A40;
+}
+.navbar-dark .navbar-toggler {
+  border-color: #343a40;
+}
+.navbar-toggler-icon {
+  background-color: #fff;
+}
+li {
+  text-transform: uppercase;
+}
+a {
+  &:link {
+    text-decoration: none;
   }
-  .navbar-toggler-icon {
-    background-color: #FFF;
+  color: rgba(255, 255, 255, 0.7);
+  &:hover {
+    color: #fff;
+    text-decoration: none;
   }
-  li {
-    text-transform: uppercase;
-  }
-  a {
-    &:link {
-      text-decoration: none;
-    }
-      color: rgba(255, 255, 255, 0.7);
-    &:hover {
-      color: #FFF;
-      text-decoration: none;
-    }
-  }
+}
 </style>

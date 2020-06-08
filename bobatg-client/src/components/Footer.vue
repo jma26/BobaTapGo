@@ -25,7 +25,7 @@
           <p>Adipisicing labore</p>
           <p>Ea proident veniam</p>
           <p>Ea adipisicing enim</p>
-        </b-col>            
+        </b-col>
       </b-row>
     </b-container>
   </div>
@@ -34,20 +34,20 @@
 <script>
 export default {
   name: "Footer"
-}
+};
 </script>
 
 <style lang="scss" scoped>
-  .footer {
-    background-color: #39434C;
-  }
-  h3 {
-    border-bottom: 1px solid rgba(255,255,255,.08);
-    padding-bottom: 1rem;
-    margin-bottom: 1.5rem;
-    color: #FFF;
-  }
-  p {
-    color: rgba(255,255,255,.6);
-  }
+.footer {
+  background-color: #39434c;
+}
+h3 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+p {
+  color: rgba(255, 255, 255, 0.6);
+}
 </style>

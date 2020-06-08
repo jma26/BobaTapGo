@@ -22,10 +22,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .form-inline {
-    justify-content: center;
-  }
-  .form-group {
-    margin-bottom: 0;
-  }
+.form-inline {
+  justify-content: center;
+}
+.form-group {
+  margin-bottom: 0;
+}
 </style>

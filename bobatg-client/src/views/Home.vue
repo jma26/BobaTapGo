@@ -33,14 +33,38 @@
           <p>Nulla enim ex laborum duis officia incididunt sint eu.</p>
         </b-col>
         <b-col class="my-3 my-lg-5" sm="12" md="12" lg="6">
-          <img src="https://source.unsplash.com/random/600x400" class="image-placeholder" />
+          <img
+            src="https://source.unsplash.com/random/600x400"
+            class="image-placeholder"
+          />
         </b-col>
       </b-row>
       <b-row class="my-5">
-        <b-col class="my-3 my-lg-5" sm="12" md="12" lg="6" order="2" order-sm="2" order-md="2" order-lg="1">
-          <img src="https://source.unsplash.com/random/600x400" class="image-placeholder" />
+        <b-col
+          class="my-3 my-lg-5"
+          sm="12"
+          md="12"
+          lg="6"
+          order="2"
+          order-sm="2"
+          order-md="2"
+          order-lg="1"
+        >
+          <img
+            src="https://source.unsplash.com/random/600x400"
+            class="image-placeholder"
+          />
         </b-col>
-        <b-col class="my-3 my-lg-5" sm="12" md="12" lg="6" order="1" order-sm="1" order-md="1" order-lg="2">
+        <b-col
+          class="my-3 my-lg-5"
+          sm="12"
+          md="12"
+          lg="6"
+          order="1"
+          order-sm="1"
+          order-md="1"
+          order-lg="2"
+        >
           <p>
             Sunt deserunt eiusmod nulla qui sint non laborum occaecat aliquip
             irure irure cupidatat nisi.
@@ -69,14 +93,38 @@
           <p>Nulla enim ex laborum duis officia incididunt sint eu.</p>
         </b-col>
         <b-col class="my-3 my-lg-5" sm="12" md="12" lg="6">
-          <img src="https://source.unsplash.com/random/600x400" class="image-placeholder" />
+          <img
+            src="https://source.unsplash.com/random/600x400"
+            class="image-placeholder"
+          />
         </b-col>
       </b-row>
       <b-row class="my-5">
-        <b-col class="my-3 my-lg-5" sm="12" md="12" lg="6" order="2" order-sm="2" order-md="2" order-lg="1">
-          <img src="https://source.unsplash.com/random/600x400" class="image-placeholder" />
+        <b-col
+          class="my-3 my-lg-5"
+          sm="12"
+          md="12"
+          lg="6"
+          order="2"
+          order-sm="2"
+          order-md="2"
+          order-lg="1"
+        >
+          <img
+            src="https://source.unsplash.com/random/600x400"
+            class="image-placeholder"
+          />
         </b-col>
-        <b-col class="my-3 my-lg-5" sm="12" md="12" lg="6" order="1" order-sm="1" order-md="1" order-lg="2">
+        <b-col
+          class="my-3 my-lg-5"
+          sm="12"
+          md="12"
+          lg="6"
+          order="1"
+          order-sm="1"
+          order-md="1"
+          order-lg="2"
+        >
           <p>
             Sunt deserunt eiusmod nulla qui sint non laborum occaecat aliquip
             irure irure cupidatat nisi.
@@ -94,8 +142,13 @@
       <CustReview />
       <b-row class="my-5 text-center">
         <b-col class="my-5">
-          <h2>Eiusmod velit est ullamco in reprehenderit reprehenderit ex qui magna.</h2>
-          <p class="mt-3">Nisi ad qui ut consequat amet cupidatat nisi dolor fugiat.</p>
+          <h2>
+            Eiusmod velit est ullamco in reprehenderit reprehenderit ex qui
+            magna.
+          </h2>
+          <p class="mt-3">
+            Nisi ad qui ut consequat amet cupidatat nisi dolor fugiat.
+          </p>
           <CTAForm />
         </b-col>
       </b-row>
@@ -130,6 +183,6 @@ export default {
   margin-top: 124px;
 }
 .image-placeholder {
-width: 100%;
+  width: 100%;
 }
 </style>
