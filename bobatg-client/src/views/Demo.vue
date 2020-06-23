@@ -7,7 +7,7 @@
           <RestaurantInfo
             :name="name.default"
             :description="description.default"
-            :categories="categories.default"
+            :categories="menu.default"
             class="pt-5 py-3"
           />
         </b-col>
@@ -50,16 +50,6 @@ export default {
         type: String,
         default:
           "Ea fugiat eiusmod sunt tempor fugiat aliquip velit aliqua qui velit anim"
-      },
-      categories: {
-        type: Array,
-        default: [
-          "Milk Teas",
-          "Green Teas",
-          "Black Teas",
-          "Coffees",
-          "Smoothies"
-        ]
       },
       menu: {
         type: Array,

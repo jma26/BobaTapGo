@@ -3,9 +3,9 @@
     <h3 class="name">{{ name }}</h3>
     <p class="description pb-4 mb-4">{{ description }}</p>
     <ul class="categories p-0">
-      <li class="category" v-for="category in categories" :key="category">
+      <li class="category" v-for="items in categories" :key="items.category">
         <a @click="scrollTo" class="category-link">
-          {{ category }}
+          {{ items.category }}
         </a>
       </li>
     </ul>
