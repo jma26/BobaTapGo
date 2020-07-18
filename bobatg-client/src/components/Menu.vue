@@ -9,7 +9,7 @@
       <b-col class="item-container pl-3 pr-3 pt-2 pb-2 my-3 mx-3" cols="5" v-for="item in drinks" :key="item.title">
         <router-link
           class="item-link"
-          :to="`/demo/${item.title}`"
+          :to="{ name: 'Item', params: { itemTitle: item.title, item: item }}"
         >
           <div class="top-container">
             <h4 class="item-title mb-3">{{item.title}}</h4>
@@ -17,11 +17,6 @@
           </div>
           <p class="item-description">{{item.description}}</p>
         </router-link>
-        <!-- <div v-if="showItemModal" class="item-modal-route">
-          <div class="modal-content">
-            <router-view />
-          </div>
-        </div> -->
       </b-col>
     </b-row>
 
@@ -39,11 +34,6 @@ export default {
       type: Array
     }
   },
-  data: function() {
-    return {
-      showItemModal: false
-    }
-  }
 };
 </script>
 

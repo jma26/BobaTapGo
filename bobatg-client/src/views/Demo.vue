@@ -21,6 +21,12 @@
         </b-col>
       </b-row>
     </b-container>
+    <div v-if="showItemModal" class="item-modal-route">
+      <div class="modal-content">
+        <!-- Render nested component, ItemModal here but need to call showItemModal() in child component, Menu in order to display -->
+        <router-view />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -38,6 +44,7 @@ export default {
   },
   data: function() {
     return {
+      showItemModal: false,
       text: {
         type: String,
         default: "Order Ahead"
