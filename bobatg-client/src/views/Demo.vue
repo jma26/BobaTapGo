@@ -17,6 +17,7 @@
           <Menu 
             :category="value.category"
             :drinks="value.drinks"
+            @itemClick="handleItemModal"
           />
         </b-col>
       </b-row>
@@ -41,6 +42,12 @@ export default {
     Banner,
     RestaurantInfo,
     Menu
+  },
+  methods: {
+    handleItemModal: function(bool) {
+      console.log(bool);
+      this.showItemModal = bool;
+    }
   },
   data: function() {
     return {

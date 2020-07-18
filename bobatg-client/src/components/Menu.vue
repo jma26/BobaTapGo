@@ -6,7 +6,7 @@
       </b-col>
     </b-row>
     <b-row align-h="between">
-      <b-col class="item-container pl-3 pr-3 pt-2 pb-2 my-3 mx-3" cols="5" v-for="item in drinks" :key="item.title">
+      <b-col class="item-container pl-3 pr-3 pt-2 pb-2 my-3 mx-3" cols="5" @click="$emit('itemClick', true)" v-for="item in drinks" :key="item.title">
         <router-link
           class="item-link"
           :to="{ name: 'Item', params: { itemTitle: item.title, item: item }}"
@@ -19,7 +19,6 @@
         </router-link>
       </b-col>
     </b-row>
-
   </div>
 </template>
 
