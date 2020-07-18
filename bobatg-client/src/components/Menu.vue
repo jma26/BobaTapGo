@@ -5,17 +5,26 @@
         <h2 :id="`${category}`" class="category-title pb-2">{{category}}</h2>
       </b-col>
     </b-row>
-    <b-row>
-      <b-col class="item-container pl-3 pr-3 pt-2 pb-2 my-3" cols="6" v-for="item in drinks" :key="item.title">
-        <b-link class="item-link" :href="`#${item.title}`">
+    <b-row align-h="between">
+      <b-col class="item-container pl-3 pr-3 pt-2 pb-2 my-3 mx-3" cols="5" v-for="item in drinks" :key="item.title">
+        <router-link
+          class="item-link"
+          :to="`/demo/${item.title}`"
+        >
           <div class="top-container">
             <h4 class="item-title mb-3">{{item.title}}</h4>
             <p class="item-price">${{item.price}}</p>
           </div>
           <p class="item-description">{{item.description}}</p>
-        </b-link>
+        </router-link>
+        <!-- <div v-if="showItemModal" class="item-modal-route">
+          <div class="modal-content">
+            <router-view />
+          </div>
+        </div> -->
       </b-col>
     </b-row>
+
   </div>
 </template>
 
@@ -28,6 +37,11 @@ export default {
     },
     drinks: {
       type: Array
+    }
+  },
+  data: function() {
+    return {
+      showItemModal: false
     }
   }
 };
@@ -44,6 +58,7 @@ export default {
 }
 
 .item-container {
+  border: 1px solid #E7E7E7;
   &:hover {
     box-shadow: 0 0 1px 0 #000;
     background-color: #F7F7F7;
