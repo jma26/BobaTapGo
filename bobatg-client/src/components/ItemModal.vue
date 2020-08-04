@@ -1,6 +1,7 @@
 <template>
   <div class="itemModal">
-    <h1>Testing Item Modal</h1>
+    <h4 class="item-title">{{ this.$attrs.item.title }}</h4>
+    <p class="item-description">{{ this.$attrs.item.description }}</p>
   </div>
 </template>
 

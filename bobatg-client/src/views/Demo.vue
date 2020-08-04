@@ -23,7 +23,7 @@
       </b-row>
     </b-container>
     <div v-if="showItemModal" class="item-modal-route">
-      <div class="modal-content">
+      <div class="item-modal-content">
         <!-- Render nested component, ItemModal here but need to call showItemModal() in child component, Menu in order to display -->
         <router-view />
       </div>
@@ -167,5 +167,20 @@ export default {
 <style lang="scss" scoped>
 .demo {
   margin-top: 124px;
+}
+.item-modal-route {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 2000;
+}
+
+.item-modal-content {
+  width: 80%;
+  margin: 25% auto;
+  background-color: #FFF;
 }
 </style>

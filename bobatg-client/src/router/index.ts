@@ -22,6 +22,7 @@ const routes: Array<RouteConfig> = [
       {
         path: ':itemTitle',
         name: 'Item',
+        props: true,
         component: ItemModal,
       }
     ]
