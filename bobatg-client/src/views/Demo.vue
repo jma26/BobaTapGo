@@ -1,5 +1,5 @@
 <template>
-  <div class="demo">
+  <div class="demo" v-bind:class="{ activeItemModal: showItemModal }">
     <Banner :text="text.default" />
     <b-container>
       <b-row>
@@ -25,7 +25,7 @@
     <div v-if="showItemModal" class="item-modal-route">
       <div class="item-modal-content">
         <!-- Render nested component, ItemModal here but need to call showItemModal() in child component, Menu in order to display -->
-        <router-view />
+        <router-view @modalClick="handleItemModal" />
       </div>
     </div>
   </div>
@@ -45,7 +45,7 @@ export default {
   },
   methods: {
     handleItemModal: function(bool) {
-      console.log(bool);
+      console.log('itemModal display status', bool);
       this.showItemModal = bool;
     }
   },
@@ -179,7 +179,7 @@ export default {
 }
 
 .item-modal-content {
-  width: 80%;
+  width: 50%;
   margin: 25% auto;
   background-color: #FFF;
 }
