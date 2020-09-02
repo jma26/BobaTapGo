@@ -7,16 +7,14 @@
     </b-row>
     <b-row align-h="between">
       <b-col class="item-container pl-3 pr-3 pt-2 pb-2 my-3 mx-3" cols="5" @click="$emit('itemClick', true)" v-for="item in drinks" :key="item.title">
-        <router-link
-          class="item-link"
-          :to="{ name: 'Item', params: { itemTitle: item.title, item: item }}"
-        >
+        <b-button v-b-modal="`${item.title}`">
           <div class="top-container">
             <h4 class="item-title mb-3">{{item.title}}</h4>
-            <p class="item-price">${{item.price}}</p>
+            <p class="item-price">{{item.price}}</p>
           </div>
           <p class="item-description">{{item.description}}</p>
-        </router-link>
+        </b-button>
+        <b-modal :id="`${item.title}`">TESTING</b-modal>
       </b-col>
     </b-row>
   </div>

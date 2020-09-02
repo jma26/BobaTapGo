@@ -1,5 +1,5 @@
 <template>
-  <div class="demo" v-bind:class="{ activeItemModal: showItemModal }">
+  <div class="demo">
     <Banner :text="text.default" />
     <b-container>
       <b-row>
@@ -167,20 +167,5 @@ export default {
 <style lang="scss" scoped>
 .demo {
   margin-top: 124px;
-}
-.item-modal-route {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  z-index: 2000;
-}
-
-.item-modal-content {
-  width: 50%;
-  margin: 25% auto;
-  background-color: #FFF;
 }
 </style>
