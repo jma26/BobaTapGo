@@ -6,8 +6,8 @@
       </b-col>
     </b-row>
     <b-row align-h="between">
-      <b-col class="item-container pl-3 pr-3 pt-2 pb-2 my-3 mx-3" cols="5" @click="$emit('itemClick', true)" v-for="item in drinks" :key="item.title">
-        <b-button v-b-modal="`${item.title}`">
+      <b-col class="item-container px-0 my-3 mx-3" cols="5" @click="$emit('itemClick', true)" v-for="item in drinks" :key="item.title">
+        <b-button v-b-modal="`${item.title}`" class="item--btn">
           <div class="top-container">
             <h4 class="item-title mb-3">{{item.title}}</h4>
             <p class="item-price">{{item.price}}</p>
@@ -38,6 +38,11 @@ export default {
 .item-link {
   color: initial;
   text-decoration: initial;
+}
+
+.item--btn {
+  width: 100%;
+  height: 100%;
 }
 
 .category-title {
