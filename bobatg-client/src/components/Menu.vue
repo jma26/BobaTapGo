@@ -14,7 +14,23 @@
           </div>
           <p class="item-description">{{item.description}}</p>
         </b-button>
-        <b-modal :id="`${item.title}`">TESTING</b-modal>
+        <!-- Add To Cart Modal -->
+        <b-modal :id="`${item.title}`" ok-title="Add To Cart">
+          <h4 class="modal-title">{{item.title}}</h4>
+          <p class="modal-price">{{item.price}}</p>
+          <template #modal-footer="{ ok }">
+            <b-input-group>
+              <b-input-group-prepend>
+                <b-btn variant="outline-info" @click="decrement()">-</b-btn>
+              </b-input-group-prepend>
+              <b-form-input type="text" :value="quantity"></b-form-input>
+              <b-input-group-prepend>
+                <b-btn variant="outline-secondary" @click="increment()">+</b-btn>
+              </b-input-group-prepend>
+              <b-button size="sm" variant="success" @click="ok()">Add To Cart</b-button>
+            </b-input-group>
+          </template>
+        </b-modal>
       </b-col>
     </b-row>
   </div>
@@ -31,6 +47,23 @@ export default {
       type: Array
     }
   },
+  data() {
+    return {
+      quantity: 1
+    }
+  },
+  methods: {
+    decrement() {
+      if (this.quantity < 1) {
+        this.quantity = 1;
+      } else {
+        this.quantity--;
+      }
+    },
+    increment() {
+      this.quantity++;
+    }
+  }
 };
 </script>
 
