@@ -8,7 +8,12 @@ module.exports = mongoose => {
         name: String,
         description: String,
         isActive: { type: Boolean, default: false },
-        menu: [{ types: Schema.Types.ObjectId, ref: 'category'}]
+        menu: [
+          { 
+            type: Schema.Types.ObjectId,
+            ref: 'category'
+          }
+        ]
       }
     )
   )

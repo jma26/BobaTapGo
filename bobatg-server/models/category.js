@@ -5,7 +5,7 @@ module.exports = mongoose => {
     "category",
     mongoose.Schema(
       {
-        _id: Schema.Types.ObjectId,
+        type: Schema.Types.ObjectId,
         name: String,
         drinks: [
           {
