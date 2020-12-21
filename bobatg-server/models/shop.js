@@ -7,7 +7,7 @@ module.exports = mongoose => {
       {
         name: String,
         description: String,
-        isActive: Boolean,
+        isActive: { type: Boolean, default: false },
         menu: [{ types: Schema.Types.ObjectId, ref: 'category'}]
       }
     )
