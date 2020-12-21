@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 const db = require('./models');
 db.mongoose
-  .connect('db.url', {
+  .connect(db.url, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
@@ -34,6 +34,8 @@ db.mongoose
 app.get("/", (req, res) => {
   res.json({ message: 'Welcome to BobaTapGo.' });
 });
+
+require('./routes/routes.js')(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
