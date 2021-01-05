@@ -13,8 +13,10 @@ exports.create = (req, res) => {
 
   // Create Shop
   const shop = new Shop({
-    name: String,
-    description: String,
+    name: req.body.name,
+    description: req.body.description,
+    isActive: req.body.isActive,
+    menu: req.body.menu
   });
 
   // Save Shop in db
