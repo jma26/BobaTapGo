@@ -16,7 +16,14 @@ exports.create = (req, res) => {
     name: req.body.name,
     description: req.body.description,
     isActive: req.body.isActive,
-    menu: req.body.menu
+    menu: req.body.menu.map(item => {
+      return {
+        title: item.title,
+        category: item.category,
+        price: item.price,
+        description: item.description
+      }
+    })
   });
 
   // Save Shop in db
@@ -73,7 +80,7 @@ exports.update = (req, res) => {
         });
       } else {
         res.send({
-          message: 'Tutorial updated successfully'
+          message: 'Shop updated successfully'
         })
       }
     })

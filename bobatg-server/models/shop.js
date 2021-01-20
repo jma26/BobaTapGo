@@ -9,9 +9,11 @@ module.exports = mongoose => {
         description: String,
         isActive: { type: Boolean, default: false },
         menu: [
-          { 
-            type: Schema.Types.ObjectId,
-            ref: 'category'
+          {
+            title: String,
+            category: String,
+            price: Number,
+            description: String
           }
         ]
       }
