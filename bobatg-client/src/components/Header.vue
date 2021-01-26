@@ -22,18 +22,38 @@
               <router-link to="/demo">Demo</router-link>
             </b-nav-item>
             <b-nav-item>
+              <router-link
+                to="/login"
+                @click.native="showLogin"
+              >
+                Log in
+              </router-link>
+            </b-nav-item>
+            <b-nav-item>
               <router-link to="/get-access-now">Get access now</router-link>
             </b-nav-item>
           </b-navbar-nav>
         </b-collapse>
       </b-container>
     </b-navbar>
+    <!-- Login Modal -->
+    <Login />
   </div>
 </template>
 
 <script>
+import Login from "@/components/Login.vue";
+
 export default {
-  name: "Header"
+  name: "Header",
+  components: {
+    Login
+  },
+  methods: {
+    showLogin: function() {
+      this.$bvModal.show('loginModal');
+    }
+  }
 };
 </script>
 
