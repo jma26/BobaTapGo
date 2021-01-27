@@ -24,6 +24,7 @@
             <b-nav-item>
               <router-link
                 to="/login"
+                event
                 @click.native="showLogin"
               >
                 Log in
