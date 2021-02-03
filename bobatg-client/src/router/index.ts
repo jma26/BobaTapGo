@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import Home from "../views/Home.vue";
+import SignUp from "../views/SignUp.vue"
 import ItemModal from "../components/ItemModal.vue";
 
 Vue.use(VueRouter);
@@ -19,6 +20,11 @@ const routes: Array<RouteConfig> = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ "../views/Demo.vue"),
   },
+  {
+    path: '/get-access-now',
+    name: "SignUp",
+    component: SignUp
+  }
 ];
 
 const router = new VueRouter({
