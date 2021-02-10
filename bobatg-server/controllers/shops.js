@@ -13,7 +13,11 @@ exports.create = (req, res) => {
 
   // Create Shop
   const shop = new Shop({
-    name: req.body.name,
+    cafeName: req.body.cafeName,
+    email: req.body.email,
+    firstName: req.body.firstName,
+    lastName: req.body.lastName,
+    password: req.body.password,
     description: req.body.description,
     isActive: req.body.isActive,
     menu: req.body.menu.map(item => {

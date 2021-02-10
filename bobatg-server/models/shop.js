@@ -5,7 +5,11 @@ module.exports = mongoose => {
     "shop",
     mongoose.Schema(
       {
-        name: String,
+        cafeName: String,
+        email: String,
+        firstName: String,
+        lastName: String,
+        password: String,
         description: String,
         isActive: { type: Boolean, default: false },
         menu: [

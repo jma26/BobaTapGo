@@ -26,7 +26,7 @@
                 id="cafe-input"
                 placeholder="Your awesome cafe name"
                 :state="cafeState"
-                v-model="cafe"
+                v-model="cafeName"
                 required
               >
               </b-form-input>
@@ -56,7 +56,7 @@
                 id="first-name-input"
                 placeholder="First name"
                 :state="firstNameState"
-                v-model="firstname"
+                v-model="firstName"
                 required
               >
               </b-form-input>
@@ -71,7 +71,7 @@
                 id="last-name-input"
                 placeholder="Last name"
                 :state="lastNameState"
-                v-model="lastname"
+                v-model="lastName"
                 required
               >
               </b-form-input>
@@ -104,12 +104,12 @@ export default {
   name: "SignUp",
   data() {
     return {
-      cafe: '',
+      cafeName: '',
       email: '',
-      firstname: '',
-      lastname: '',
+      firstName: '',
+      lastName: '',
       password: '',
-      cafeState: null,
+      cafeNameState: null,
       firstNameState: null,
       lastNameState: null,
       emailState: null,
