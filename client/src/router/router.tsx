@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Login from '../components/Login';
+import Login from '../components/User/Login/Login';
 
 const Router = (): ReactElement => {
   return (
