@@ -1,8 +1,8 @@
-import { useState, ChangeEvent } from 'react';
+import axios from 'axios';
+import { useState, ChangeEvent, FormEvent } from 'react';
 
 interface FormInterface {
   email: string,
-  fullname: string,
   password: string
 }
 
@@ -12,7 +12,7 @@ const initialFormValues = {
 }
 
 const FormControls = () => {
-  const [ formValues, setFormValues ] = useState<Partial<FormInterface>>(initialFormValues);
+  const [ formValues, setFormValues ] = useState<FormInterface>(initialFormValues);
   const [ formErrors, setErrors ] = useState({});
 
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -25,7 +25,7 @@ const FormControls = () => {
     validateFormValue();
   }
   
-  const formIsValid = () => {
+  const formIsValid = (): boolean => {
     let isValid = true;
     if (Object.values(formValues).every(Boolean) && Object.values(formErrors).every(function(value) { return value === '' })) {
       return isValid;
@@ -33,7 +33,7 @@ const FormControls = () => {
     return !isValid;
   }
   
-  const validateFormValue = () => {
+  const validateFormValue = (): void => {
     let temp: Partial<FormInterface> = { ...formErrors };
 
     if ('email' in formValues) {
@@ -43,21 +43,29 @@ const FormControls = () => {
       }
     }
 
-    if ('fullname' in formValues) {
-      temp.fullname = formValues.fullname ? '' : 'Full name field is required'
-    }
-
     if ('password' in formValues) {
       temp.password = formValues.password ? '': 'Password field is required'
     }
+
     setErrors({
       ...temp
     });
   }
 
+  const handleLogin = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    try {
+      let store = await axios.post('/stores/login', formValues);
+      console.log('store', store);
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
   return {
     handleInputChange,
-    formIsValid
+    formIsValid,
+    handleLogin
   };
 }
 

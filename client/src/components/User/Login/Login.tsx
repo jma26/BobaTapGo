@@ -4,12 +4,13 @@ import FormControls from '../Form/FormControls';
 const Login = () => {
   const {
     handleInputChange,
-    formIsValid
+    formIsValid,
+    handleLogin
   } = FormControls();
   return (
     <>
     <Container maxWidth='sm'>
-      <form className='login-form'>
+      <form className='login-form' onSubmit={handleLogin}>
         <Grid
           container
           direction='column'
